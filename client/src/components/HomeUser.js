@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function HomeUser() {
-  axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
+  axios.defaults.baseURL = "https://bookverse-backend-hcjw.onrender.com";
   axios.defaults.withCredentials = true;
 
   const [userbooks, setUserBooks] = React.useState([]);
