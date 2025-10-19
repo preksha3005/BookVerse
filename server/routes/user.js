@@ -42,11 +42,11 @@ router.post("/login", async (req, res) => {
           }
         );
         res.cookie("token", token, {
-          httpOnly: true,
-          secure: true, // Always set to true for production HTTPS
-          sameSite: "None", // 'None' is required for cross-site cookies
-          maxAge: 3600000,
-        });
+        httpOnly: true,
+        secure: true, // Always set to true for production HTTPS
+        sameSite: "None", // 'None' is required for cross-site cookies
+        maxAge: 3600000,
+      });
 
         return res.json({ status: true, message: "Login successful" });
       }
