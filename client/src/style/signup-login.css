@@ -1,0 +1,182 @@
+.signup-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #031919, #0d4b4b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  padding-top: 60px; 
+}
+
+.signup-card {
+  background-color: #127474;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.signup-card h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.signup-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-card input {
+  padding: 12px 15px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #1c3b3b;
+  color: #ffffff;
+}
+
+.signup-card input::placeholder {
+  color: #c0dcdc;
+}
+
+.signup-btn {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #4de6e6;
+  color: #020e0e;
+  box-shadow: 0 5px 15px rgba(18, 188, 188, 0.4);
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #4ad2e4;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(18, 188, 188, 0.6);
+}
+
+.error-msg {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #c0dcdc;
+}
+
+.login-link span {
+  color: #1cbcbc;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-link span:hover {
+  color: #4ad2e4;
+}
+
+@media (max-width: 992px) {
+  .signup-container {
+    padding-top: 80px;
+  }
+
+  .signup-card {
+    padding: 40px 35px;
+    max-width: 540px;
+    height: 48vh;
+  }
+
+  .signup-card h2 {
+    font-size: 2.2rem;
+  }
+
+  .signup-card input {
+    font-size: 1.5rem;
+    padding: 10px 14px;
+  }
+
+  .signup-btn {
+    font-size: 1.2rem;
+    padding: 10px 28px;
+  }
+  .login-link{
+    font-size: 1.4rem;
+  }
+}
+
+/* For screens up to 600px (mobile landscape & small tablets) */
+@media (max-width: 600px) {
+  .signup-container {
+    padding: 80px 20px;
+    margin-top: 6vh;
+  }
+
+  .signup-card {
+    width: 100%;
+    padding: 35px 25px;
+    border-radius: 18px;
+    height: 55vh;
+  }
+
+  .signup-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .signup-card input {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .signup-btn {
+    font-size: 0.95rem;
+    padding: 10px 25px;
+  }
+
+  .login-link {
+    font-size: 1rem;
+  }
+}
+
+/* For screens up to 400px (small mobile portrait) */
+@media (max-width: 400px) {
+  .signup-container {
+    padding: 100px 15px;
+  }
+
+  .signup-card {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .signup-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .signup-card input {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .signup-btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .login-link {
+    font-size: 0.9rem;
+  }
+}

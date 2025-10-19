@@ -1,0 +1,167 @@
+.recommendations-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #031919, #0d4b4b);
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.recommendations-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00bcd4;
+  margin-bottom: 50px;
+}
+
+.recommendations-grid {
+  /* display: grid;
+  grid-template-columns: repeat(3,1fr); */
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  max-width: 1200px;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.recommendation-card {
+  background: #064152;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.recommendation-card .book-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.recommendation-card .book-info h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #00bcd4;
+}
+
+.recommendation-card .book-info p {
+  font-size: 0.9rem;
+  margin: 3px 0;
+  color: #c0dcdc;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #00bcd4;
+  margin: 50px auto;
+  padding: 20px 15px;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .recommendations-title {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+  }
+
+  .recommendations-grid {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 15px;
+  }
+
+  .recommendation-card {
+    width: 100%;
+  }
+
+  .recommendation-card img {
+    height: 290px;
+  }
+
+  .recommendation-card .book-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .recommendation-card .book-info p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .recommendations-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .recommendations-grid {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+  }
+
+  .message {
+    font-size: 1.2rem;
+    margin: 40px auto;
+    padding: 15px;
+    width: 60vw;
+  }
+
+  .recommendation-card img {
+    height: 220px;
+  }
+
+  .recommendation-card .book-info h3 {
+    font-size: 1rem;
+  }
+
+  .recommendation-card .book-info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .recommendations-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .recommendations-grid {
+    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+  }
+
+  .message {
+    font-size: 1rem;
+    margin: 30px auto;
+    padding: 10px;
+    width: 60vw;
+  }
+
+  .recommendation-card img {
+    height: 180px;
+  }
+
+  .recommendation-card .book-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .recommendation-card .book-info p {
+    font-size: 0.75rem;
+  }
+}

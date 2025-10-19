@@ -1,0 +1,210 @@
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #031919, #0d4b4b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  padding-top: 60px;
+}
+
+.home-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1300px;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 350px;
+  color: #ffffff;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.home-description {
+  font-size: 1.15rem;
+  margin-bottom: 40px;
+  line-height: 1.7;
+  color: #c0dcdc;
+  max-width: 500px;
+  font-weight: 300;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.signup-btn,
+.login-btn {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.signup-btn {
+  background-color: #1cbcbc;
+  color: #020e0e;
+  box-shadow: 0 5px 15px rgba(18, 188, 188, 0.4);
+}
+
+.signup-btn:hover {
+  background-color: #14a0a0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(18, 188, 188, 0.6);
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #1cbcbc;
+  border: 2px solid #1cbcbc;
+}
+
+.login-btn:hover {
+  background-color: rgba(18, 188, 188, 0.1);
+  color: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.home-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+
+/* ✅ Responsive Design for Home Page (Improved Visibility) */
+
+/* Up to 992px (small laptops & tablets) */
+@media (max-width: 992px) {
+  .home-content-wrapper {
+    gap: 30px;
+    width: 90%;
+  }
+
+  .home-text {
+    padding-right: 20px;
+  }
+
+  .home-title {
+    font-size: 2.8rem;
+  }
+
+  .home-description {
+    font-size: 1.05rem;
+  }
+
+  .home-image img {
+    height: 60vh;
+  }
+}
+
+/* Up to 600px (phones/tablets portrait) */
+@media (max-width: 600px) {
+  .home-container {
+    padding-top: 80px; /* Ensure text not hidden under navbar */
+    height: auto; /* Let content expand naturally */
+  }
+
+  .home-content-wrapper {
+    flex-direction: column-reverse; /* Image below text */
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .home-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .home-title {
+    font-size: 2.3rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 auto 30px;
+    max-width: 90%;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+
+  .signup-btn,
+  .login-btn {
+    width: auto;
+    padding: 10px 24px;
+  }
+
+  .home-image {
+    justify-content: center;
+  }
+
+  .home-image img {
+    width: 85%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+  }
+}
+
+/* Up to 400px (small phones) */
+@media (max-width: 400px) {
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .home-description {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .signup-btn,
+  .login-btn {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    width: 70vw;
+    margin-left: -2vh;
+  }
+
+  .home-image img {
+    width: 90%;
+    max-height: 250px;
+  }
+}

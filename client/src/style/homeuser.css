@@ -1,0 +1,249 @@
+
+.homeuser-container {
+  width: 100%;
+  min-height: 100vh; /* FIX: Changed height to min-height to prevent black space */
+  background: linear-gradient(135deg, #031919, #0d4b4b);
+  color: #fff;
+  padding-top: 70px; /* navbar height */
+}
+
+.homeuser-content {
+  max-width: 1300px;
+  margin: auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.search-bar input {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 2px solid #00bcd4;
+  background: #0e2d2d;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #00e0ff;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+}
+
+
+.book-status {
+  color: #80ffff;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+.book-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+.book-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.book-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.book-scroll::-webkit-scrollbar-thumb {
+  background-color: #00bcd4;
+  border-radius: 10px;
+}
+
+.book-card {
+  min-width: 180px;
+  background: #141414;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  flex-shrink: 0;
+}
+
+.book-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 10px 12px;
+}
+
+.book-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.3;
+  max-height: 3.9em; 
+  overflow: hidden;
+}
+
+.book-info p {
+  font-size: 0.9rem;
+  color: #c0dcdc;
+  margin-bottom: 5px;
+}
+
+.book-info span {
+  font-size: 0.8rem;
+  color: #1cbcbc;
+}
+
+.no-books {
+  font-size: 0.95rem;
+  color: #8f8f8f;
+}
+
+@media (max-width: 992px) {
+  .navbar-user {
+    padding: 12px 25px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+  .nav-link {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+  .profile-icon {
+    font-size: 1.2rem;
+  }
+
+  .search-bar input {
+    width: 70%;
+    max-width: 400px;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    margin-top: 2vh;
+  }
+  .book-card {
+    min-width: 160px;
+  }
+  .book-card img {
+    height: 220px;
+  }
+  .book-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-user {
+    padding: 10px 10px;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    gap: 8px;
+  }
+  .nav-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 4px 6px;
+  }
+  .profile-icon {
+    font-size: 1rem;
+    padding: 4px;
+  }
+
+  .search-bar {
+    margin-top: 2vh;
+  }
+  .search-bar input {
+    width: 85%;
+    max-width: none;
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+  .book-card {
+    min-width: 150px;
+  }
+  .book-card img {
+    height: 200px;
+  }
+  .book-section h2 {
+    font-size: 1.4rem;
+  }
+  .homeuser-content {
+    padding: 20px 10px;
+    gap: 30px;
+  }
+}
+
+/* For small phones (≤400px) */
+@media (max-width: 400px) {
+  /* Navbar adjustments */
+  .navbar-user {
+    padding: 8px 5px;
+  }
+  .logo {
+    font-size: 1rem;
+    gap: 4px;
+  }
+  .nav-links {
+    gap: 4px;
+  }
+  .nav-link {
+    font-size: 0.7rem;
+    padding: 2px 4px;
+  }
+  .profile-icon {
+    font-size: 0.8rem;
+    padding: 2px;
+  }
+
+  /* Content adjustments */
+  .search-bar input {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    margin-top: 1vh;
+  }
+  .book-card {
+    min-width: 130px;
+  }
+  .book-card img {
+    height: 180px;
+  }
+  .book-info h3 {
+    font-size: 0.9rem;
+  }
+  .book-info p {
+    font-size: 0.8rem;
+  }
+  .book-section h2 {
+    font-size: 1.2rem;
+  }
+}

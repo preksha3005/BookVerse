@@ -1,0 +1,188 @@
+/* UserProfile - Dark Teal Theme */
+
+.profile-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #031919, #0d4b4b);
+  color: #fff;
+  padding-top: 100px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.profile-greeting {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #00bcd4;
+}
+
+.cards-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  background: #064152;
+  min-width: 240px;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: default;
+  margin-top: 50px;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+.profile-card h2 {
+  font-size: 2rem;
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  color: #c0dcdc;
+  font-weight: 500;
+}
+
+/* 🔹 Logout Button */
+.logout-btn {
+  margin-top: 60px;
+  background: #00bcd4;
+  color: #031919;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #00a0b8;
+  color: #ffffff;
+}
+
+/* 💻 For screens ≤ 992px (Tablets / Small Laptops) */
+@media (max-width: 992px) {
+  .profile-greeting {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .cards-container {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card {
+    min-width: unset;
+    padding: 10px 10px;
+    margin-top: 3vh;
+    width: 70%;
+  }
+
+  .profile-card h2 {
+    font-size: 2rem;
+  }
+
+  .profile-card p {
+    font-size: 1.4rem;
+  }
+
+  .logout-btn {
+    padding: 12px 35px;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    width: 30vw;
+  }
+}
+
+/* 📱 For screens ≤ 600px (Large phones / Small tablets) */
+@media (max-width: 600px) {
+  .profile-container{
+    padding-bottom: 20px;
+  }
+
+  .profile-greeting {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .profile-card {
+    width: 75%;
+    min-width: unset;
+    padding: 20px 15px;
+    margin-top: 5vh;
+  }
+
+  .profile-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-card p {
+    font-size: 0.9rem;
+  }
+
+  .logout-btn {
+    padding: 10px 30px;
+    font-size: 0.95rem;
+    margin-top: 40px;
+    width: 50vw;
+  }
+}
+
+/* 📞 For screens ≤ 400px (Small phones) */
+@media (max-width: 400px) {
+  .profile-container{
+    padding-bottom: 20px;
+  }
+
+  .profile-greeting {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .cards-container {
+    gap: 12px;
+  }
+
+  .profile-card {
+    width: 80%;
+    padding: 18px 12px;
+    margin-top: 4vh;
+  }
+
+  .profile-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-card p {
+    font-size: 0.95rem;
+  }
+
+  .logout-btn {
+    padding: 8px 25px;
+    font-size: 0.9rem;
+    margin-top: 35px;
+    width: 50vw;
+  }
+}
