@@ -184,3 +184,40 @@
     margin-top: 15px;
   }
 }
+
+
+@media (max-width: 380px) {
+  .signup-container {
+    padding: 15px 8px;
+  }
+
+  .signup-card {
+    padding: 25px 15px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 320px; /* tighter width for small phones */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .signup-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+  }
+
+  .signup-card input {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  .signup-btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 40px;
+  }
+
+  .login-link {
+    font-size: 0.85rem;
+    margin-top: 12px;
+  }
+}
