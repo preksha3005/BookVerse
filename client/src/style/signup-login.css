@@ -18,6 +18,7 @@
   max-width: 400px;
   width: 90%;
   text-align: center;
+  height: auto;
 }
 
 .signup-card h2 {
@@ -94,39 +95,39 @@
   .signup-card {
     padding: 40px 35px;
     max-width: 540px;
-    height: 48vh;
+    height: auto;
   }
 
   .signup-card h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .signup-card input {
-    font-size: 1.5rem;
-    padding: 10px 14px;
+    font-size: 1.2rem;
+    padding: 12px 28px;
   }
 
   .signup-btn {
     font-size: 1.2rem;
-    padding: 10px 28px;
+    padding: 12px 28px;
   }
   .login-link{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
-/* For screens up to 600px (mobile landscape & small tablets) */
 @media (max-width: 600px) {
   .signup-container {
-    padding: 80px 20px;
-    margin-top: 6vh;
+    padding: 40px 20px;
+    margin-top: 0;
   }
 
   .signup-card {
     width: 100%;
     padding: 35px 25px;
     border-radius: 18px;
-    height: 55vh;
+    height: auto;
+    max-width: 350px;
   }
 
   .signup-card h2 {
@@ -136,12 +137,12 @@
 
   .signup-card input {
     font-size: 0.9rem;
-    padding: 10px 12px;
+    padding: 12px ;
   }
 
   .signup-btn {
-    font-size: 0.95rem;
-    padding: 10px 25px;
+    font-size: 1.05rem;
+    padding: 12px 25px;
   }
 
   .login-link {
@@ -149,36 +150,37 @@
   }
 }
 
-/* For screens up to 400px (small mobile portrait) */
 @media (max-width: 400px) {
   .signup-container {
-    padding: 100px 15px;
+    padding: 20px 10px;
   }
 
   .signup-card {
     padding: 30px 20px;
     border-radius: 15px;
+    width: 100%;
+    max-width: 360px;
   }
 
   .signup-card h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
   }
 
   .signup-card input {
     font-size: 0.85rem;
-    padding: 8px 10px;
+    padding: 12px 12px;
   }
 
   .signup-btn {
     width: 100%;
-    font-size: 0.9rem;
-    padding: 10px;
-    margin: 0.5vh;
+    font-size: 1rem;
+    padding: 12px;
+    margin-top: 15px;
   }
 
   .login-link {
-    font-size: 0.9rem;
-    margin-top: 0.2vh;
+    font-size: 0.95rem;
+    margin-top: 15px;
   }
 }
