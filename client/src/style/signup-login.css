@@ -174,9 +174,11 @@
     width: 100%;
     font-size: 0.9rem;
     padding: 10px;
+    margin: 0.5vh;
   }
 
   .login-link {
     font-size: 0.9rem;
+    margin-top: 0.2vh;
   }
 }
